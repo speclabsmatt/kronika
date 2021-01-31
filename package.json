@@ -1,0 +1,31 @@
+{
+  "name": "kronika",
+  "version": "1.0.0",
+  "description": "Node.JS & Express Blog API",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest --config jest.config.cjs",
+    "heroku-postbuild": "cd ui && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "keywords": [
+    "blog",
+    "express",
+    "node.js"
+  ],
+  "author": "Matthew Lanier",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "mongoose": "5.11.12"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "7.12.11",
+    "jest": "26.6.0",
+    "nodemon": "2.0.7",
+    "supertest": "6.0.1"
+  }
+}
